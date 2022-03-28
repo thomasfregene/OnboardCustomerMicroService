@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  onboardcustomer.api:
+    image: ${DOCKER_REGISTRY-}onboardcustomerapi
+    build:
+      context: .
+      dockerfile: OnboardCustomer.Api/Dockerfile
